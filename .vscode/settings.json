@@ -1,6 +1,7 @@
 {
     "cSpell.allowCompoundWords": true,
     "cSpell.words": ["nowiki"],
+    "cSpell.ignorePaths": ["resources/ext.MathJax.js"],
     "intelephense.diagnostics.undefinedClassConstants": false,
     "intelephense.diagnostics.undefinedConstants": false,
     "intelephense.diagnostics.undefinedFunctions": false,
