@@ -23,22 +23,22 @@ class MathJaxHooks
         $tex = "\displaystyle{ $tex }";
 
         if (isset($args['block'])) {
-            return self::texRander($tex, $parser, true);
+            return self::randerTex($tex, $parser, true);
         }
 
-        return self::texRander($tex, $parser);
+        return self::randerTex($tex, $parser);
     }
 
     public static function chemRender($tex, array $args, Parser $parser, PPFrame $frame)
     {
         if (isset($args['block'])) {
-            return self::texRander("\ce{ $tex }", $parser, true);
+            return self::randerTex("\ce{ $tex }", $parser, true);
         }
 
-        return self::texRander("\ce{ $tex }", $parser);
+        return self::randerTex("\ce{ $tex }", $parser);
     }
 
-    private static function texRander($tex, $parser, bool $isBlock = false)
+    private static function randerTex($tex, $parser, bool $isBlock = false)
     {
         $parser->getOutput()->addModules('ext.MathJax');
         $parser->getOutput()->addModules('ext.MathJax.mobile');
