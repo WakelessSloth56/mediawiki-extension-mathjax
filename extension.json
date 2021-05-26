@@ -1,0 +1,42 @@
+{
+    "name": "MathJax",
+    "version": "0.9.1",
+    "author": ["WakelessSloth56"],
+    "url": "",
+    "license-name": "GPL-2.0-or-later",
+    "type": "parserhook",
+    "AutoloadClasses": {
+        "MathJaxHooks": "MathJaxHooks.php"
+    },
+    "config": {
+        "MathJaxUseSvg": {
+            "value": true,
+            "description": "true: svg, false: common html"
+        },
+        "MathJaxAms": {
+            "value": false,
+            "description": "Enable automatic equation numbering functionality"
+        },
+        "MathJaxSvgOptions": {
+            "value": {},
+            "description": "MathJax SVG output processor options"
+        },
+        "MathJaxCHtmlOptions": {
+            "value": {},
+            "description": "MathJax CommonHTML output processor options"
+        }
+    },
+    "Hooks": {
+        "ParserFirstCallInit": "MathJaxHooks::onParserFirstCallInit"
+    },
+    "ResourceModules": {
+        "ext.MathJax": {
+            "scripts": ["resources/ext.MathJax.js"]
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "",
+        "remoteExtPath": "MathJax/resources"
+    },
+    "manifest_version": 2
+}
