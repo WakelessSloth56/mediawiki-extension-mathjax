@@ -1,5 +1,13 @@
 mw.hook('wikipage.categories').add(function ($content) {
     window.MathJax = {
+        options: {
+            enableMenu: false,
+            menuOptions: {
+                settings: {
+                    collapsible: false,
+                },
+            },
+        },
         tex: {
             inlineMath: [['[math]', '[/math]']],
             displayMath: [['[mathblock]', '[/mathblock]']],
