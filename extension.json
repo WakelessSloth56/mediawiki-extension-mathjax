@@ -1,7 +1,7 @@
 {
     "name": "MathJax",
     "version": "0.9.1",
-    "author": ["WakelessSloth56"],
+    "author": "[https://github.com/WakelessSloth56 WakelessSloth56]",
     "url": "https://github.com/WakelessSloth56/mediawiki-extension-mathjax",
     "description": "Render formulas",
     "license-name": "GPL-2.0-or-later",
